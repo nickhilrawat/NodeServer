@@ -17,5 +17,4 @@ const makeRequest = (options, clientRequest, clientResponse) => {
     });
     clientRequest.pipe(proxy,{end: true});
 };
-
 server.listen(port, () => console.log(`Proxy Server Running on port ${port}`))
